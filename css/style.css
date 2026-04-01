@@ -9,9 +9,8 @@
 :root {
     --main-fund: #05142B;
     --main-text: #fff;
-    --text-secundary: #eee;
+    --text-secundary: #B1C6DB;
     --button-color: #0226F6;
-    --third-color: #B1C6DB;
     --highlight-color: #1182FA;
 }
 body {
@@ -61,10 +60,9 @@ section#products #products-container{
 
 #products-container .product-card {
     background-color: var(--main-fund);
-    border: 1px solid var(--third-color);
-    border-radius: 8px;
+    border: 2px solid var(--highlight-color);
+    border-radius: 10px;
     padding: 15px;
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -72,4 +70,28 @@ section#products #products-container{
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
+
+.product-card .name {
+    color: var(--main-text);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.product-card .price {
+    color: var(--highlight-color);
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.product-card .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+
+.buttons .btn {
+    
+} 
