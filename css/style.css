@@ -93,5 +93,15 @@ section#products #products-container{
 
 
 .buttons .btn {
-    
+    flex: 1;
+    padding: 5px;
+    font-weight: bold;
+    color: var(--main-text);
+    font-weight: bold;
+    text-decoration: none;
 } 
+
+.buttons button {
+    background-color: var(--main-fund);
+    border: 1px solid var(--text-secundary);
+}
