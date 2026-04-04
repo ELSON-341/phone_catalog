@@ -129,7 +129,6 @@ section#products #products-container{
 }
 
 .buttons a:hover {
-    background-color: var(--button-color);
     background-color: var(--main-fund);
     border-color: var(--highlight-color);
 }
