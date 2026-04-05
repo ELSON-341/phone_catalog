@@ -12,10 +12,12 @@
     --text-secundary: #B1C6DB;
     --button-color: #0226F6;
     --highlight-color: #1182FA;
+    --color-footer: #030D1D;
 }
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--main-fund);
+    font-size: .8em;
 }
 
 header#banner {
@@ -53,9 +55,12 @@ section#products #subtitle {
     margin-bottom: 40px;
 }
 
-section#products #products-container{
+section#products #products-container {
+    max-width: 1000px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     gap: 10px;
 }
 
@@ -68,11 +73,14 @@ section#products #products-container{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.product-card figure { 
+    width: 100%;
+}
+
 .product-card figure img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
     border-radius: 10px;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
@@ -135,6 +143,7 @@ section#products #products-container{
 
 
 footer {
+    background-color: var(--color-footer);
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px 30px;
@@ -144,14 +153,14 @@ footer {
 
 footer #container-credits {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 #container-credits .credit {
     color: var(--text-secundary);
+    margin-bottom: 20px;
 }
 
 #container-credits .credit img {
@@ -161,12 +170,32 @@ footer #container-credits {
     text-align: center;
 }
 
-#container-credit .social-media {
+#container-credits .social-media {
+    flex: 1;
     display: flex;
-    justify-content: center;
+    padding: 10px;
+    gap: 10px;
 }
 
-footer #copyright{
+#container-credits .social-media a {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--main-fund);
+    border: 1px solid var(--highlight-color);
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+#container-credits .social-media a:hover {
+    background-color: var(--button-color);
+    border-color: var(--main-fund);
+}
+
+#container-credits .social-media a i {
+    color: var(--text-secundary);
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+footer #copyright {
     border-top: 1px solid var(--highlight-color);
     text-align: center;
     padding: 10px;
