@@ -133,6 +133,41 @@ section#products #products-container{
     border-color: var(--highlight-color);
 }
 
+
 footer {
-    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 30px;
+    gap: 15px;
+    color: var(--main-text);
+}
+
+footer #container-credits {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#container-credits .credit {
+    color: var(--text-secundary);
+}
+
+#container-credits .credit img {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+    text-align: center;
+}
+
+#container-credit .social-media {
+    display: flex;
+    justify-content: center;
+}
+
+footer #copyright{
+    border-top: 1px solid var(--highlight-color);
+    text-align: center;
+    padding: 10px;
 }
