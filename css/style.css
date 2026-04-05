@@ -68,20 +68,26 @@ section#products #products-container {
     background-color: var(--main-fund);
     border: 2px solid var(--highlight-color);
     border-radius: 10px;
-    padding: 15px;
+    /* padding: 15px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card figure { 
     width: 100%;
+    border-bottom: 2px solid var(--highlight-color);
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 .product-card figure img {
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
-    margin-bottom: 20px;
+}
+
+.product-card .info {
+    padding: 15px;
 }
 
 .product-card .name {
@@ -153,7 +159,7 @@ footer {
 
 footer #container-credits {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
 }
@@ -171,7 +177,6 @@ footer #container-credits {
 }
 
 #container-credits .social-media {
-    flex: 1;
     display: flex;
     padding: 10px;
     gap: 10px;
