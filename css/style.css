@@ -166,6 +166,50 @@ footer {
     color: var(--main-text);
 }
 
+/* MODAL */
+section#modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+section#modal #modal-container {
+    background-color: var(--main-fund);
+    border: 2px solid var(--highlight-color);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+}
+
+#modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#modal-content figure {
+    width: 100%;
+    height: 400px;
+    border: 2px solid var(--highlight-color);
+}
+
+#modal-content figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 2/1;
+}
+
+/* FOOTER */
 footer #container-credits {
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,7 @@
+header#banner {
+    height: 475px;
+}
+
+section#products h1, #subtitle {
+    text-align: center;
+}
