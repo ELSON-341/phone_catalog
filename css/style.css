@@ -186,7 +186,9 @@ section#modal #modal-container {
     border-radius: 10px;
     padding: 20px;
     max-width: 400px;
-    width: 90%;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
 }
 
 #modal-content {
@@ -197,16 +199,44 @@ section#modal #modal-container {
 }
 
 #modal-content figure {
+    padding: 10px;
     width: 100%;
-    height: 400px;
+    height: auto;
     border: 2px solid var(--highlight-color);
 }
+
+button#close-modal { 
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: var(--color-footer);
+    border: none;
+    color: var(--main-text);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5, color 0.5;
+    cursor: pointer;
+}
+
+button#close-modal:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    background-color: var(--main-text);
+    color: var(--color-footer);
+}
+
 
 #modal-content figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 2/1;
+    aspect-ratio: 1/1;
 }
 
 /* FOOTER */
