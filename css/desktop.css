@@ -5,3 +5,31 @@ header#banner {
 section#products h1, #subtitle {
     text-align: center;
 }
+
+/* MODAL */
+button#close-modal {
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+
+section#modal #modal-container {
+    /* max-width: 800px; */
+    width: 90%;
+    height: 550px;
+}
+
+section#modal #modal-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+section#modal #modal-content figure {
+    flex: 1;
+}
+
+.modal-info {
+    flex: 1;
+}
