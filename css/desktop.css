@@ -7,15 +7,16 @@ section#products h1, #subtitle {
 }
 
 /* MODAL */
-button#close-modal {
-    align-self: flex-start;
-    justify-self: flex-end;
-}
 
 section#modal #modal-container {
-    /* max-width: 800px; */
+    max-width: 800px;
     width: 90%;
-    height: 550px;
+    max-height: 500px;
+    height: 90%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    border-radius: 10px;
+    border: 2px solid var(--highlight-color);
 }
 
 section#modal #modal-content {

@@ -155,17 +155,6 @@ section#products #products-container {
     border-color: var(--highlight-color);
 }
 
-
-footer {
-    background-color: var(--color-footer);
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 5rem;
-    padding: 10px 20px;
-    gap: 15px;
-    color: var(--main-text);
-}
-
 /* MODAL */
 section#modal {
     display: flex;
@@ -176,6 +165,7 @@ section#modal {
     left: 0;
     width: 100vw;
     height: 100vh;
+    backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 3;
 }
@@ -198,9 +188,15 @@ section#modal #modal-container {
 
 #modal-content figure {
     padding: 10px;
-    width: 75%;
     flex: 1 1;
     border: 2px solid var(--highlight-color);
+}
+
+#close-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 10px;
 }
 
 button#close-modal { 
@@ -268,6 +264,16 @@ button#close-modal:hover {
 }
 
 /* FOOTER */
+footer {
+    background-color: var(--color-footer);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    padding: 10px 20px;
+    gap: 15px;
+    color: var(--main-text);
+}
+
 footer #container-credits {
     display: flex;
     justify-content: space-between;
