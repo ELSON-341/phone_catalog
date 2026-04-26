@@ -8,13 +8,17 @@ section#products h1, #subtitle {
 
 /* MODAL */
 
+section#modal {
+    padding: 10px;
+}
+
 section#modal #modal-container {
+    flex: auto;
     max-width: 800px;
-    width: 90%;
+    width: 100%;
     max-height: 500px;
-    height: 90%;
+    height: 100%;
     overflow-y: auto;
-    scrollbar-width: none;
     border-radius: 10px;
     border: 2px solid var(--highlight-color);
 }
@@ -23,12 +27,4 @@ section#modal #modal-content {
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-}
-
-section#modal #modal-content figure {
-    flex: 1;
-}
-
-.modal-info {
-    flex: 1;
 }

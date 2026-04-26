@@ -181,15 +181,9 @@ section#modal #modal-container {
 
 #modal-content {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: center;
     gap: 15px;
-}
-
-#modal-content figure {
-    padding: 10px;
-    flex: 1 1;
-    border: 2px solid var(--highlight-color);
 }
 
 #close-container {
@@ -225,6 +219,11 @@ button#close-modal:hover {
     color: var(--color-footer);
 }
 
+#modal-content figure {
+    padding: 10px;
+    flex: 1;
+    border: 2px solid var(--highlight-color);
+}
 
 #modal-content figure img{
     width: 100%;
@@ -236,6 +235,7 @@ button#close-modal:hover {
 .modal-info { 
     display: flex;
     flex-flow: column nowrap;
+    flex: 1;
 }
 
 .modal-info h2 {
