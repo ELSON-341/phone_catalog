@@ -87,7 +87,7 @@ section#products #products-container {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .product-card .info {
@@ -228,7 +228,7 @@ button#close-modal:hover {
 #modal-content figure img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     aspect-ratio: 1/1;
 }
 
