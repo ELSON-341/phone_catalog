@@ -88,6 +88,7 @@ section#products #products-container {
     width: 100%;
     border-radius: 10px;
     object-fit: contain;
+    background-color: var(--main-text);
 }
 
 .product-card .info {
@@ -223,6 +224,7 @@ button#close-modal:hover {
     padding: 10px;
     flex: 1;
     border: 2px solid var(--highlight-color);
+    background-color: #000;
 }
 
 #modal-content figure img{
