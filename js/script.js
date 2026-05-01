@@ -21,7 +21,7 @@ fetch('products.json')
 
         const price = document.createElement('p')
         price.classList.add('price')
-        price.textContent = product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).replace('.', ',')
+        price.textContent = product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
         info.appendChild(h2)
         info.appendChild(price)
