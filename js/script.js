@@ -1,8 +1,16 @@
+
+// creating card
 fetch('products.json')
 .then(response => response.json())
 .then(products => {
     const productsContainer = document.getElementById('products-container');
-        
+    const modal = document.getElementById('modal')
+    const modalContainer = document.getElementById('modal-container')
+    const modalContent = document.getElementById('modal-content')
+    const closeBtn = document.querySelector('#close-container #close-modal')
+
+    // console.log(modalContent)
+
     products.forEach(product => {
         const productCard = document.createElement('div')
         productCard.classList.add('product-card')
@@ -48,7 +56,25 @@ fetch('products.json')
 
         productsContainer.appendChild(productCard)
 
-        console.log(productsContainer)
-    });
+        // Open modal
+        productCard.querySelector('button').addEventListener('click', () => {
+            // const modalContainer = document.getElementById('modal-container')
+            // const modalContent = document.getElementById('modal-content')
+            console.log(modalContainer)
+            modal.style.display = 'flex'
 
+            // Show the modal information
+            modalContent.innerHTML =`
+                <figure>
+                    <img src="${product.image}" alt="${product.name}">
+                </figure>
+                <div class="info">
+                    <h2 class="name">${product.name}</h2>
+                    <p class="price">${product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+                    <p class="description">${product.description}</p>
+                </div>
+            `
+        } )
+        modalContainer.appendChild(modalContent)
+    });
 })
