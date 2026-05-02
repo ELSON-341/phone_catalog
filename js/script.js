@@ -7,7 +7,7 @@ fetch('products.json')
     const modal = document.getElementById('modal')
     const modalContainer = document.getElementById('modal-container')
     const modalContent = document.getElementById('modal-content')
-    const closeBtn = document.querySelector('#close-container #close-modal')
+    const closeBtn = document.querySelector('#close-container .bx')
 
     // console.log(modalContent)
 
@@ -58,9 +58,6 @@ fetch('products.json')
 
         // Open modal
         productCard.querySelector('button').addEventListener('click', () => {
-            // const modalContainer = document.getElementById('modal-container')
-            // const modalContent = document.getElementById('modal-content')
-            console.log(modalContainer)
             modal.style.display = 'flex'
 
             // Show the modal information
@@ -68,13 +65,16 @@ fetch('products.json')
                 <figure>
                     <img src="${product.image}" alt="${product.name}">
                 </figure>
-                <div class="info">
+                <div class="modal-info">
                     <h2 class="name">${product.name}</h2>
                     <p class="price">${product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
                     <p class="description">${product.description}</p>
+                    <div class="buttons">
+                            <a class="btn" href="https://wa.me/98992036351" rel="nofollow" target="_blank"><i class='bx bxl-whatsapp'></i> WhatsApp</a>
+                    </div>
                 </div>
             `
         } )
-        modalContainer.appendChild(modalContent)
-    });
+    })
+    closeBtn.onclik = () => console.log('test');
 })
