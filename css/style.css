@@ -210,8 +210,8 @@ button#close-modal {
     border: none;
     color: var(--main-text);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5, color 0.5;
-    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+    /* cursor: pointer; */
 }
 
 button#close-modal:hover {
@@ -219,6 +219,12 @@ button#close-modal:hover {
     background-color: var(--main-text);
     color: var(--color-footer);
     pointer-events: none;
+}
+
+button#close-modal > .bx {
+    pointer-events: none;
+    /* color: var(--main-text);
+    /* cursor: pointer; */ 
 }
 
 #modal-content figure {
