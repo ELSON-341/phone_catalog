@@ -189,42 +189,38 @@ section#modal #modal-container {
 
 #close-container {
     display: flex;
-    width: 100%;
     justify-content: flex-end;
     margin-bottom: 20px;
 }
 
-button#close-modal { 
-    align-self: flex-end;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    border: none;
+button#close-modal {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;
-    padding: 10px;
     background-color: var(--color-footer);
-    border: none;
-    color: var(--main-text);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5s, color 0.5s;
-    /* cursor: pointer; */
+    border: 1px solid var(--highlight-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 14px 15px 10px 1px;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 
 button#close-modal:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
     background-color: var(--main-text);
-    color: var(--color-footer);
-    pointer-events: none;
+    border-color: var(--main-fund);
 }
 
-button#close-modal > .bx {
-    pointer-events: none;
-    /* color: var(--main-text);
-    /* cursor: pointer; */ 
+button#close-modal .bx {
+    color: var(--main-text);
+    font-size: 2.5em;
+    transition: color 0.5s;
+}
+
+button#close-modal .bx:hover {
+    color: var(--color-footer);
 }
 
 #modal-content figure {

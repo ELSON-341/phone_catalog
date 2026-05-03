@@ -76,5 +76,17 @@ fetch('products.json')
             `
         } )
     })
-    closeBtn.onclik = () => console.log('test');
+
+    // Close modal
+    closeBtn.onclick = () => {
+        modal.style.display = 'none'
+        document.body.style.overflow = 'auto'
+    }
+
+    modal.onclick = (event) => {
+        if (event.target === modal)  {
+            modal.style.display = 'none'
+        }
+    }
 })
+
