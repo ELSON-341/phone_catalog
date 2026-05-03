@@ -59,6 +59,7 @@ fetch('products.json')
         // Open modal
         productCard.querySelector('button').addEventListener('click', () => {
             modal.style.display = 'flex'
+            document.body.style.overflow = 'hidden'
 
             // Show the modal information
             modalContent.innerHTML =`
@@ -86,6 +87,7 @@ fetch('products.json')
     modal.onclick = (event) => {
         if (event.target === modal)  {
             modal.style.display = 'none'
+            document.body.style.overflow = 'auto'
         }
     }
 })
