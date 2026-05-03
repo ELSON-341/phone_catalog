@@ -76,7 +76,7 @@ section#products #products-container {
 }
 
 .product-card figure { 
-    flex: 0 1;
+    flex: 1 0;
     border-bottom: 2px solid var(--highlight-color);
     padding: 15px;
     margin-bottom: 20px;
@@ -93,8 +93,8 @@ section#products #products-container {
 .product-card .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex: 0 1;
+    justify-content: flex-end;
+    flex: 1 0;
     padding: 15px;
 }
 
