@@ -43,8 +43,8 @@ fetch('products.json')
 
         const linkBtn = document.createElement('a')
         linkBtn.classList.add('btn')
-        linkBtn.innerText = "WhatsApp"
-        linkBtn.href = `https://wa.me/98992036351`
+        linkBtn.innerHTML = "<i class='bx bxl-whatsapp'></i> WhatsApp"
+        linkBtn.href = `https://wa.me/9891989969`
 
         buttons.appendChild(btn)
         buttons.appendChild(linkBtn)
